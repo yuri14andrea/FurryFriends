@@ -1,0 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.contenedor{
+  width: 100%;
+  margin-top: 10px;
+}  
+header{
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+.logo img{
+  width: 145px;
+  margin-left: 40px;  
+}
+.menu{
+  display: flex;
+  margin:auto;
+}
+.menu ul{
+  display: flex;
+}
+.menu ul li{
+  list-style: none;
+  padding: 7px;
+}
+.menu img{
+  width: 25px;
+  justify-content: right;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #402B27;
+  font-size: 17px;
+  font-family: 'Dosis', sans-serif;
+  padding: 30px;
+}
+.menu ul li a:hover{
+  color: #f27b35;
+}
+
+/* Aca empieza el slider */
+
+#todos_slider{
+  margin-top: -10px;
+  background-color:white;
+  max-width: 100%;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#todos_slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#todos_slider > ul.slider{
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 555px;
+}
+
+#todos_slider > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+#todos_slider > ul.slider li img{
+  width: 100%;
+  height: 555px;
+  object-fit: cover;
+}
+
+#todos_slider > ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#todos_slider > ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.circulos{
+  text-align: center;
+  margin: 150px;
+}
+
+.circulos li{
+  display: inline-block;
+  text-align: center;
+}
+
+.circulos li a{
+  display: inline-block;
+  background-color:  #402B27;
+  padding: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  margin: 4px;
+}
+
+/* Acá empieza: Imagen y texto Sobre nuestra tienda */
+
+#contenido{
+  display: flex;  
+}
+.tienda{
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 10px;  
+  align-items: center;
+}
+.tienda_img{
+  display: flex;
+  margin-left: 120px;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.tienda_img img{
+  width: 550px;
+  display: flex;
+}
+.tienda_texto{
+  margin: auto;
+  display: inline-block;
+  flex-wrap: wrap;
+  overflow: hidden;
+  text-align: center;
+}
+.tienda_texto h1{
+  text-align: left;
+  padding: 5px;
+  color: #402B27;
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+}
+.tienda_texto p{
+  color: black;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 70px;
+}
+.tienda_texto button{
+  width: 100px;
+  height: 40px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid  #f27b35;
+  background:  #f27b35;
+  font-size: 15px;
+  Font-family: 'Dosis', sans-serif;
+  margin-left: -530px;
+}
+.tienda_texto button:hover{
+  background:  #f27b35;
+  color: white;
+  font-size: 20px;
+}
+
+/* Acá empieza las cards de ser,prod,promo */
+
+.columnas{
+  display: flex;
+  margin: 35px 20px;
+}
+.card{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+.card_img img{
+  height: 150px;
+  margin-bottom: 20px;
+}
+.card_img > .h1{
+  text-align: center;
+  color:white;
+  padding: 5px;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  background-color:  #F26680;
+}
+.card_img > .h2{
+  text-align: center;
+  color:white;
+  padding: 5px;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  background-color: #0FBFAE;
+}
+.card_img > .h3{
+  text-align: center;
+  color:white;
+  padding: 5px;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  background-color:  #f27b35;
+}
+.card_img img:hover{
+  opacity: 0.8;
+  cursor:pointer;
+}
+.card_p1{
+  text-align: justify;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid  #F26680;
+}
+.card_p2{
+  text-align: justify;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #0FBFAE;
+}
+.card_p3{
+  text-align: justify;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid  #f27b35;
+}
+.bot01{
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid   #F26680;
+  background:   #F26680;
+  font-size: 10px;
+  Font-family: 'Dosis', sans-serif;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.bot02{
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid #0FBFAE;
+  background: #0FBFAE;
+  font-size: 10px;
+  Font-family: 'Dosis', sans-serif;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.bot03{
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid #f27b35;
+  background: #f27b35;
+  font-size: 10px;
+  Font-family: 'Dosis', sans-serif;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.card button:hover{
+  color: white;
+  font-size: 12px;
+}
+
+/* Acá epieza las imagenes de las marcas */
+
+.marcas{
+  display: flex;
+}
+.concentrados{
+    display: flex;
+    overflow: hidden;
+    margin: 30px;
+    display: flexbox;
+    width: 100%;
+    flex-direction: column;
+}
+.concentrados_texto{
+  margin-left: 0px;  
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+h2{
+padding: 5px;
+font-size: 30px;
+font-family: 'Dosis', sans-serif;
+}
+.concentrados img{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 100%;
+}
+
+/* Acá epieza el footer */
+
+footer{
+  background-color: #0FBFAE;
+  color: black
+} 
+.abajo_general{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  padding-top: 40px;  
+  margin: 10px 0px;
+}
+.abajo_horario{
+  width: 400px;
+  display: flexbox;
+  text-align: justify;
+  padding: 0px 70px;
+  flex-wrap: wrap;
+}
+.abajo_horario p{
+  Font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.abajo_horario h3{
+  padding-bottom: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.abajo_horario h4{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.abajo_horario img{
+  padding: 8px;
+}
+.abajo_mapa{
+  padding: 20px;  
+}
+.abajo_mapa iframe{
+  border-radius: 20px;
+}
+.abajo_texto p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 15px;
+}
